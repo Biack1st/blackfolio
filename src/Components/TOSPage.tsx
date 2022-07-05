@@ -6,7 +6,7 @@ interface ListItemProps {
 
 function listItem(props: ListItemProps) {
     return (
-        <li className="text-center pt-1">{props.text}</li>
+        <li className="text-center pt-1 text-lg">{props.text}</li>
     )
 }
 
@@ -22,7 +22,7 @@ class TosPage extends React.Component {
                   {listItem({text: "When paying, you must include the 30% tax. This only applies to gamepass payment. This can be calculated by getting the original price and dividing it by 0.7."})}
                   {listItem({text: "I will give you the final product after you paid in full. This is to prevent me from getting scammed"})}
                   {listItem({text: "Before I start doing the commission. You must show proof of funds via screen shot. This must include robux count and username. This is to prevent me from wasting time"})}
-                  <p className="text-center pt-2 text-red-600 font-bold">When you commission me, you automatically accept these terms. <strong>NO EXCEPTIONS</strong></p>
+                  <p className="text-center pt-2 text-red-600 font-bold text-lg">When you commission me, you automatically accept these terms. <strong>NO EXCEPTIONS</strong></p>
                 </ul>
             </div>
             

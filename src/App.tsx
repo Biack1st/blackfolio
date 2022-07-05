@@ -10,10 +10,7 @@ export default function App() {
       <AboutmePage/>
       <PastworkPage/>
       <TosPage/>
-      <TosPage/>
 
-      <TosPage/>
-      <TosPage/>
 
     </body>
   )
