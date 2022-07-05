@@ -8,10 +8,11 @@ interface props {
 class Video extends React.Component<props> {
     render(): React.ReactNode {
         return (
-            <div className="w-11/2 h-[12/12] place-items-center bg-blue-500 rounded-lg">
+            <div className=" place-items-center bg-blue-500 rounded-lg top">
                 <h1 className="text-center text-white font-semibold text-lg">{this.props.title}</h1>
-                <video className="rounded-t-none rounded-lg w-[1/4] h-[1/4] content-center m-auto" controls>
+                <video className="rounded-t-none rounded-lg w-[1/4] h-[1/4] content-center m-auto " typeof="video/mp4" controls>
                     <source src={this.props.url}/>
+                    your browser doesn't support HTML videos ¯\_(ツ)_/¯
                 </video>
             </div>
         )
