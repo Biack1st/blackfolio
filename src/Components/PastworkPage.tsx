@@ -10,7 +10,7 @@ function PastworkPage() {
                 </p>
                 <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-3">
                     <Video url="https://thumbs.gfycat.com/HollowRewardingCrustacean-mobile.mp4" title="Leaderboard with Podium" ></Video>
-                    <Video url="https://thumbs.gfycat.com/HollowRewardingCrustacean-mobile.mp4" title="Leaderboard with Podium" ></Video>
+                    <Video url="https://thumbs.gfycat.com/ZealousShyCleanerwrasse-mobile.mp4" title="Map Voting system" ></Video>
                 </div> 
             </div>    
         </div>
