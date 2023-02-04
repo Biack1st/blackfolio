@@ -14,6 +14,7 @@ export default function App() {
       <TosPage/>
       <AvailabilityPage/>
       <PricesPage/>
+      
 
     </body>
   )
