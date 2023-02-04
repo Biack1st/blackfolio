@@ -1,4 +1,5 @@
 import Video from "./Video"
+import videos from "../videosList"
 
 function PastworkPage() {
     return (
@@ -8,9 +9,18 @@ function PastworkPage() {
                 <p className="text-center font-normal pt-[10px] text-lg items-center ">
                     This section will showcase my past work:
                 </p>
+                <h3 className="font-semibold text-2xl  text-center text-black">HTTP systems</h3> 
                 <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-3">
-                    <Video url="https://thumbs.gfycat.com/HollowRewardingCrustacean-mobile.mp4" title="Leaderboard with Podium" ></Video>
-                    <Video url="https://thumbs.gfycat.com/ZealousShyCleanerwrasse-mobile.mp4" title="Map Voting system" ></Video>
+                    {/* <Video url="https://thumbs.gfycat.com/HollowRewardingCrustacean-mobile.mp4" title="Leaderboard with Podium" ></Video>
+                    <Video url="https://thumbs.gfycat.com/ZealousShyCleanerwrasse-mobile.mp4" title="Map Voting system" ></Video> */}
+                    {videos.map((videoData: any) => {
+                        if (videoData.section === "http") {
+                            return (
+                                <Video url={videoData.url} title={videoData.title}></Video>
+                            )
+                        }
+                        return null
+                    })}
                 </div> 
             </div>    
         </div>
