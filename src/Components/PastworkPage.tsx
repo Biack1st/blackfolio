@@ -21,7 +21,20 @@ function PastworkPage() {
                         }
                         return null
                     })}
-                </div> 
+                </div>
+                <h3 className="font-semibold text-2xl  text-center text-black top-10">Game util</h3>  
+                <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-3">
+                    {/* <Video url="https://thumbs.gfycat.com/HollowRewardingCrustacean-mobile.mp4" title="Leaderboard with Podium" ></Video>
+                    <Video url="https://thumbs.gfycat.com/ZealousShyCleanerwrasse-mobile.mp4" title="Map Voting system" ></Video> */}
+                    {videos.map((videoData: any) => {
+                        if (videoData.section === "gUtil") {
+                            return (
+                                <Video url={videoData.url} title={videoData.title}></Video>
+                            )
+                        }
+                        return null
+                    })}
+                </div>
             </div>    
         </div>
               
